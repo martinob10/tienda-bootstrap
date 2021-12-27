@@ -81,24 +81,6 @@
                     text-shadow: 3px 3px 5px #161d19;
                 }
                 
-                .Whatsapp {
-                    font-size: 1.15rem;
-                    margin: 0.1rem;
-                }
-                
-                .Whatsapp a {
-                    color: rgb(16, 240, 83);
-                    text-shadow: 1px 1px 1px #161d19;
-                    opacity: 90%;
-                    transition: 1s;
-                }
-                
-                .Whatsapp a:hover {
-                    font-size: 1.2rem;
-                    margin: 0.2rem;
-                    opacity: 90%;
-                }
-                
                 .nav ul {
                     display: flex;
                     margin: 0.3rem;
@@ -216,7 +198,7 @@
                 }
                 
                 .card a:hover {
-                    background-color: white;
+                    border: 2px solid #c742f0;
                 }
                 /* Iconos index*/
                 
@@ -454,6 +436,21 @@
                     font-size: 1rem;
                     text-align: justify;
                 }
+                /* boton flotanten w.app*/
+                
+                .btn-whatsapp {
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    color: #fff;
+                    position: fixed;
+                    right: 20px;
+                    bottom: 20px;
+                    border-radius: 50%;
+                    line-height: 80px;
+                    text-align: center;
+                    z-index: 999;
+                }
                 /*BLOG*/
                 
                 .noticias-blog {
@@ -513,11 +510,6 @@
                     list-style: none;
                     margin: 35px;
                     letter-spacing: 5px;
-                }
-                
-                .Whatsapp-min {
-                    color: #02c479;
-                    display: none;
                 }
                 /*
 Colores: Verde Dark 4 = 2F5D62
@@ -588,9 +580,6 @@ Colores: Verde Dark 4 = 2F5D62
                     .logo a {
                         font-size: 1rem;
                     }
-                    .Whatsapp {
-                        font-size: 0.7rem;
-                    }
                     .contenedor-footer {
                         flex-direction: column;
                         flex-wrap: nowrap;
@@ -636,18 +625,8 @@ Colores: Verde Dark 4 = 2F5D62
                 }
                 
                 @media screen and (max-width: 550px) {
-                    .Whatsapp {
-                        display: none;
-                    }
                     .card {
                         width: 30rem;
-                    }
-                    .Whatsapp-min {
-                        display: unset;
-                        color: #02c479;
-                    }
-                    .Whatsapp-min a {
-                        color: #02c479;
                     }
                     .titulo {
                         font-size: 2rem;

@@ -1,0 +1,34 @@
+.img-blog {
+    background-image: linear-gradient( rgba(5, 250, 103, 0.3), rgba(238, 6, 168, 0.3)), url("../img/blog.jpg");
+    background-position: center;
+}
+
+.contenedor-noti {
+    padding: 0.5rem;
+    border: 0.1rem solid #A7C4BC;
+    margin: 0.9rem;
+    background-color: #f5f9faea;
+    .text-noticia {
+        font-size: 13px;
+        text-align: justify;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .titular {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 15px;
+        letter-spacing: 5px;
+        font-weight: lighter;
+        color: #244347;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px double #091310;
+    }
+    .fecha {
+        background-color: #A7C4BC;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+}

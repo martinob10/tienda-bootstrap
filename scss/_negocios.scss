@@ -1,0 +1,59 @@
+        .negocios {
+            margin: 1rem .3rem;
+            background-image: linear-gradient( rgba(30, 230, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/tdsa.jpg");
+            background-position: bottom;
+            height: 28rem;
+            background-size: cover;
+            color: #fff;
+            min-width: 95%;
+            border-bottom: solid 2px rgb(30, 230, 203);
+            .texto {
+                letter-spacing: .1rem;
+                text-shadow: 3px 3px 5px #33212e;
+                .titulo {
+                    float: right;
+                    margin: 2.5rem;
+                    font-size: 3rem;
+                    border-bottom: 3px solid #ec27b1;
+                    letter-spacing: .3rem;
+                    @media screen and (max-width: 900px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        
+        .negocios-listado {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            .text-categorias span {
+                font-size: 1.5rem;
+                font-family: 'Open Sans', sans-serif;
+                color: #02c479;
+                margin: 1rem;
+                border-bottom: 1px solid black;
+            }
+            .listado ul {
+                margin: 1rem;
+                padding: 0 10px;
+                list-style: none;
+                li a {
+                    display: inline-block;
+                    &:hover {
+                        background-color: white;
+                        color: #c508b5;
+                    }
+                }
+            }
+        }
+        
+        .img {
+            width: 20%;
+            p {
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }

@@ -1,0 +1,55 @@
+.footer {
+    background-color: rgb(248, 244, 248);
+}
+
+.news {
+    background-color: #DFEEEA;
+    border-radius: 0.9rem;
+    border: solid 0.1rem;
+    box-shadow: 2px solid #132325;
+    align-self: center;
+}
+
+.categorias {
+    margin-top: 3rem;
+    list-style: none;
+    ul li a {
+        color: rgb(31, 192, 165);
+        text-decoration: none;
+        transition: 1s;
+        &:hover {
+            border-bottom: 1px solid blueviolet;
+        }
+    }
+}
+
+.contacto {
+    flex-direction: column;
+}
+
+.btn-whatsapp {
+    display: block;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 999;
+}
+
+.derechos {
+    background-color: rgb(59, 212, 166);
+    border-radius: 10% 30% 50% 70%;
+    color: black;
+    padding-top: 0.1rem;
+    display: block;
+    width: 100%;
+    font-size: 0.7rem;
+    h3 {
+        font-size: 1rem;
+    }
+}

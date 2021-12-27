@@ -1,0 +1,81 @@
+@media screen and (max-width: 900px) {
+    .titulo {
+        font-size: 2rem;
+    }
+    .texto h3 {
+        font-size: 1.7rem;
+    }
+    .texto p {
+        font-size: 1.3rem;
+    }
+    .logo a {
+        font-size: 1rem;
+    }
+    .contenedor-footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .contenedor-header {
+        top: -2.1rem;
+    }
+    .noti-header {
+        font-size: 0.7rem;
+        padding: 0.01rem;
+    }
+    .barrios {
+        justify-content: center;
+    }
+    .negocio-individual {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .noticias-blog {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .archivo ul li {
+        margin: 1rem;
+    }
+    .archivo ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .listado-barrio {
+        display: block;
+    }
+    .barrio-categorias {
+        font-size: 1.2rem;
+        margin: .5rem;
+    }
+    .card {
+        width: 30rem;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        width: 30rem;
+    }
+    .titulo {
+        font-size: 2rem;
+        text-align: center;
+        margin: .7rem;
+    }
+    .texto h3 {
+        font-size: 1.7rem;
+        margin: 1rem;
+    }
+    p {
+        margin: auto;
+    }
+    .barrios ul {
+        flex-direction: column;
+    }
+    .navegacion-negocios a {
+        color: #02c479;
+        font-size: .9rem;
+    }
+}

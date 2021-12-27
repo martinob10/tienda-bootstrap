@@ -1,0 +1,250 @@
+.contenedor-header {
+  background-color: #fff; }
+  .contenedor-header .noti-header {
+    background-color: #f558e0;
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    border-bottom: solid 2px #1ee6cb; }
+    .contenedor-header .noti-header p {
+      margin: 0; }
+  .contenedor-header .bg-verde {
+    background-color: #11c49d;
+    color: #1ee6cb; }
+  .contenedor-header ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 2s; }
+    .contenedor-header ul li a:hover {
+      text-decoration: none;
+      color: #ee92f1;
+      border-bottom: 2px solid #fff; }
+
+.footer {
+  background-color: #f8f4f8; }
+
+.news {
+  background-color: #DFEEEA;
+  border-radius: 0.9rem;
+  border: solid 0.1rem;
+  box-shadow: 2px solid #132325;
+  align-self: center; }
+
+.categorias {
+  margin-top: 3rem;
+  list-style: none; }
+  .categorias ul li a {
+    color: #1fc0a5;
+    text-decoration: none;
+    transition: 1s; }
+    .categorias ul li a:hover {
+      border-bottom: 1px solid blueviolet; }
+
+.contacto {
+  flex-direction: column; }
+
+.btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999; }
+
+.derechos {
+  background-color: #3bd4a6;
+  border-radius: 10% 30% 50% 70%;
+  color: black;
+  padding-top: 0.1rem;
+  display: block;
+  width: 100%;
+  font-size: 0.7rem; }
+  .derechos h3 {
+    font-size: 1rem; }
+
+.negocios {
+  margin: 1rem .3rem;
+  background-image: linear-gradient(rgba(30, 230, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/tdsa.jpg");
+  background-position: bottom;
+  height: 28rem;
+  background-size: cover;
+  color: #fff;
+  min-width: 95%;
+  border-bottom: solid 2px #1ee6cb; }
+  .negocios .texto {
+    letter-spacing: .1rem;
+    text-shadow: 3px 3px 5px #33212e; }
+    .negocios .texto .titulo {
+      float: right;
+      margin: 2.5rem;
+      font-size: 3rem;
+      border-bottom: 3px solid #ec27b1;
+      letter-spacing: .3rem; }
+      @media screen and (max-width: 900px) {
+        .negocios .texto .titulo {
+          font-size: 2rem; } }
+
+.negocios-listado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+  .negocios-listado .text-categorias span {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #02c479;
+    margin: 1rem;
+    border-bottom: 1px solid black; }
+  .negocios-listado .listado ul {
+    margin: 1rem;
+    padding: 0 10px;
+    list-style: none; }
+    .negocios-listado .listado ul li a {
+      display: inline-block; }
+      .negocios-listado .listado ul li a:hover {
+        background-color: white;
+        color: #c508b5; }
+
+.img {
+  width: 20%; }
+  .img p {
+    font-size: 1rem;
+    text-align: justify; }
+
+.img-blog {
+  background-image: linear-gradient(rgba(5, 250, 103, 0.3), rgba(238, 6, 168, 0.3)), url("../img/blog.jpg");
+  background-position: center; }
+
+.contenedor-noti {
+  padding: 0.5rem;
+  border: 0.1rem solid #A7C4BC;
+  margin: 0.9rem;
+  background-color: #f5f9faea; }
+  .contenedor-noti .text-noticia {
+    font-size: 13px;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding-bottom: 20px; }
+  .contenedor-noti .titular {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    color: #244347;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px double #091310; }
+  .contenedor-noti .fecha {
+    background-color: #A7C4BC;
+    font-size: 13px;
+    letter-spacing: 3px; }
+
+.categoria-negocio {
+  width: 18rem;
+  text-align: center;
+  align-items: center; }
+
+.texto-negocio {
+  font-size: 1rem;
+  color: #132325; }
+  .texto-negocio .categoria-negocio {
+    font-size: 1.1rem;
+    color: #778d87; }
+  .texto-negocio .nombre-negocio {
+    font-size: 2.3rem; }
+  .texto-negocio .datos-pagos {
+    margin: .7rem;
+    font-size: 1.4rem;
+    color: #02c479; }
+  .texto-negocio .horario {
+    color: #145343;
+    font-size: 1.3rem; }
+
+/*Globales - Reseteo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  padding: 0.5rem; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff; }
+
+.principal {
+  margin: 1rem .3rem;
+  background-image: linear-gradient(rgba(30, 230, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/fondo.jpg");
+  background-position: bottom;
+  height: 28rem;
+  background-size: cover;
+  color: #fff;
+  min-width: 95%;
+  border-bottom: solid 2px #1ee6cb; }
+  .principal .texto {
+    letter-spacing: .1rem;
+    text-shadow: 3px 3px 5px #33212e; }
+    .principal .texto .titulo {
+      float: right;
+      margin: 2.5rem;
+      font-size: 3rem;
+      border-bottom: 3px solid #ec27b1;
+      letter-spacing: .3rem; }
+      @media screen and (max-width: 900px) {
+        .principal .texto .titulo {
+          font-size: 2rem; } }
+    .principal .texto h3 {
+      font-size: 2.7rem;
+      margin: 2rem;
+      letter-spacing: .2rem; }
+      @media screen and (max-width: 900px) {
+        .principal .texto h3 {
+          font-size: 1.7rem; } }
+    .principal .texto p {
+      margin: 1rem; }
+
+/* Card */
+.noticias {
+  box-shadow: 0px 0px 1px 1px #2fdfb9;
+  justify-content: center;
+  border-radius: 1rem;
+  text-align: justify;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  align-items: center; }
+  .noticias .card {
+    text-align: justify;
+    margin: 1rem;
+    align-items: center;
+    opacity: 80%;
+    transition: 1s;
+    border: none; }
+    .noticias .card:hover {
+      opacity: 100%; }
+  .noticias h2 {
+    color: #1ee6cb;
+    text-align: center; }
+  .noticias .card a {
+    color: #02c479;
+    float: right;
+    border: 2px solid #02c479;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: .5rem; }
+    .noticias .card a:hover {
+      border: 2px solid #c742f0; }
+
+.info-iconos {
+  justify-content: space-around; }
+  .info-iconos .card {
+    border: none; }

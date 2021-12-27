@@ -1,0 +1,27 @@
+    .contenedor-header {
+        background-color: #fff;
+        .noti-header {
+            background-color: #f558e0;
+            font-size: 0.8rem;
+            text-align: center;
+            letter-spacing: .2rem;
+            border-bottom: solid 2px rgb(30, 230, 203);
+            p {
+                margin: 0;
+            }
+        }
+        .bg-verde {
+            background-color: #11c49d;
+            color: #1ee6cb;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: 2s;
+            &:hover {
+                text-decoration: none;
+                color: rgb(238, 146, 241);
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
