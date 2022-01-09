@@ -1,103 +1,151 @@
-       @import "nav";
-       @import "footer";
-       @import "negocios";
-       @import "blog";
-       @import "tierra";
-       @import "ferreteria";
-       /*Globales - Reseteo */
-       
-       * {
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-       }
-       
-       img {
-           max-width: 100%;
-           padding: 0.5rem;
-       }
-       
-       body {
-           font-family: 'Open Sans', sans-serif;
-           background-color: #fff;
-       }
-       
-       .principal {
-           margin: 1rem .3rem;
-           background-image: linear-gradient( rgba(30, 230, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/fondo.jpg");
-           background-position: bottom;
-           height: 28rem;
-           background-size: cover;
-           color: #fff;
-           min-width: 95%;
-           border-bottom: solid 2px rgb(30, 230, 203);
-           .texto {
-               letter-spacing: .1rem;
-               text-shadow: 3px 3px 5px #33212e;
-               .titulo {
-                   float: right;
-                   margin: 2.5rem;
-                   font-size: 3rem;
-                   border-bottom: 3px solid #ec27b1;
-                   letter-spacing: .3rem;
-                   @media screen and (max-width: 900px) {
-                       font-size: 2rem;
-                   }
-               }
-               h3 {
-                   font-size: 2.7rem;
-                   margin: 2rem;
-                   letter-spacing: .2rem;
-                   @media screen and (max-width: 900px) {
-                       font-size: 1.7rem;
-                   }
-               }
-               p {
-                   margin: 1rem;
+   @import "import";
+   /*Globales - Reseteo */
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       list-style: none;
+   }
+   
+   img {
+       max-width: 100%;
+       padding: 0.5rem;
+   }
+   
+   body {
+       font-family: 'Open Sans', sans-serif;
+       background-color: #fff;
+   }
+   
+   // Mixin
+   @mixin img-principal {
+       margin: 1rem .3rem;
+       background-position: bottom;
+       height: 28rem;
+       background-size: cover;
+       color: #fff;
+       min-width: 95%;
+       border-bottom: solid 2px $Verde-Logo;
+       .texto {
+           letter-spacing: .1rem;
+           text-shadow: 3px 3px 5px $Verde-Black;
+           .titulo {
+               float: right;
+               margin: 2.5rem;
+               font-size: 3rem;
+               border-bottom: 3px solid $Fuxia;
+               letter-spacing: .3rem;
+               @media screen and (max-width: 900px) {
+                   font-size: 2rem;
                }
            }
-       }
-       /* Card */
-       
-       .noticias {
-           box-shadow: 0px 0px 1px 1px rgb(47, 223, 185);
-           justify-content: center;
-           border-radius: 1rem;
-           text-align: justify;
-           padding: 1.5rem;
-           margin: 1.5rem;
-           align-items: center;
-           .card {
-               text-align: justify;
+           h3 {
+               font-size: 2.7rem;
+               margin: 2rem;
+               letter-spacing: .2rem;
+               @media screen and (max-width: 900px) {
+                   font-size: 1.7rem;
+               }
+           }
+           p {
                margin: 1rem;
-               align-items: center;
-               opacity: 80%;
-               transition: 1s;
-               border: none;
-               &:hover {
-                   opacity: 100%;
-               }
            }
-           h2 {
-               color: #1ee6cb;
+       }
+   }
+   
+   .principal {
+       background-image: linear-gradient( rgba(30, 250, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/fondo.jpg");
+       @include img-principal;
+   }
+   
+   .noticias {
+       background-image: linear-gradient( rgba(30, 250, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/tdsa.jpg");
+       @include img-principal;
+   }
+   
+   .img-blog {
+       @include img-principal;
+       background-image: linear-gradient( rgba(30, 250, 203, 0.3), rgba(238, 12, 219, 0.3)), url("../img/blog.jpg");
+   }
+   
+   .fondo-tarjetas {
+       background-color: #fff;
+       padding: 1rem;
+       align-items: center;
+       border-radius: .5rem;
+       .card-body {
+           text-align: left;
+           @media only screen and (max-width: 768px) {
                text-align: center;
            }
-           .card a {
-               color: #02c479;
-               float: right;
-               border: 2px solid #02c479;
-               border-radius: 25px;
-               text-transform: uppercase;
-               padding: .5rem;
-               &:hover {
-                   border: 2px solid #c742f0;
+           &:hover .masinfo {
+               opacity: 1;
+               transition: 1s;
+               @media only screen and (max-width: 768px) {
+                   text-align: center;
+                   align-items: center;
+                   ;
                }
            }
        }
-       
-       .info-iconos {
-           justify-content: space-around;
-           .card {
-               border: none;
+       .tarjeta-negocio {
+           box-shadow: 0 0 0.2em rgba(0, 0, 0, .2);
+           cursor: pointer;
+           transition: .3s;
+           @media only screen and (max-width: 768px) {
+               width: 20rem;
+           }
+           @media screen and (max-width: 992px) {}
+           &:hover {
+               box-shadow: 0 0 1.2em rgba(0, 0, 0, .2);
+           }
+           img {
+               width: 16rem;
+               @media only screen and (max-width: 768px) {
+                   margin-left: 2rem;
+               }
            }
        }
+       a {
+           text-decoration: none;
+           color: $Verde-Black;
+       }
+       .masinfo {
+           opacity: 0;
+           transition: .5s;
+       }
+   }
+   /* Card */
+   
+   .novedades {
+       box-shadow: 0px 0px 1px 1px $Verde-Logo;
+       justify-content: center;
+       border-radius: 1rem;
+       text-align: justify;
+       padding: 1.5rem;
+       margin: 1.5rem;
+       align-items: center;
+       h2 {
+           color: $Verde-Logo;
+           text-align: center;
+       }
+       .card a {
+           color: $Verde-Logo;
+           float: right;
+           border: 2px solid $Verde-Logo;
+           border-radius: 25px;
+           text-transform: uppercase;
+           padding: .5rem;
+           &:hover {
+               border: 2px solid $Fuxia;
+           }
+       }
+   }
+   
+   .info-iconos {
+       justify-content: space-around;
+       .card {
+           border: none;
+       }
+   }

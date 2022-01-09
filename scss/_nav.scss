@@ -1,18 +1,21 @@
     .contenedor-header {
         background-color: #fff;
+        .navbar {
+            padding: 0;
+        }
         .noti-header {
-            background-color: #f558e0;
+            background-color: $Fuxia;
             font-size: 0.8rem;
             text-align: center;
             letter-spacing: .2rem;
-            border-bottom: solid 2px rgb(30, 230, 203);
+            border-bottom: solid 2px $Verde-Logo;
             p {
                 margin: 0;
             }
         }
         .bg-verde {
-            background-color: #11c49d;
-            color: #1ee6cb;
+            background-color: $Verde-Logo;
+            color: $Verde-Logo;
         }
         ul li a {
             text-decoration: none;

@@ -1,20 +1,44 @@
+//uso del MAPA y map-get
+$fuentes-sizes: ( size0: .7rem, size1: 1rem, size2: 1.1rem, size3: 1.3rem, size4: 1.4rem, size5:2.3rem);
 .texto-negocio {
-    font-size: 1rem;
-    color: #132325;
+    font-size: map-get($fuentes-sizes, size1);
+    color: $Verde-Black;
     .categoria-negocio {
-        font-size: 1.1rem;
-        color: #778d87;
+        font-size: map-get($fuentes-sizes, size2);
+        color: $Verde;
     }
     .nombre-negocio {
-        font-size: 2.3rem;
+        font-size: map-get($fuentes-sizes, size5);
     }
     .datos-pagos {
-        margin: .7rem;
-        font-size: 1.4rem;
-        color: #02c479;
+        margin: map-get($fuentes-sizes, size0);
+        font-size: map-get($fuentes-sizes, size4);
+        color: $Verde-Dark;
     }
     .horario {
-        color: #145343;
-        font-size: 1.3rem;
+        color: $Verde-Dark;
+        font-size: map-get($fuentes-sizes, size3);
+    }
+}
+
+.navegacion-negocios {
+    margin: 0;
+    ul {
+        display: flex;
+        li {
+            display: flex;
+            font-size: .8rem;
+            letter-spacing: .1rem;
+            margin: .1rem;
+            a {
+                color: $Verde-Black;
+                text-decoration: none;
+                transition: 1s;
+                &:hover {
+                    border-bottom: 1px solid $Verde-White;
+                    color: $Verde-Dark;
+                }
+            }
+        }
     }
 }

@@ -12,13 +12,12 @@
 
 .categorias {
     margin-top: 3rem;
-    list-style: none;
     ul li a {
-        color: rgb(31, 192, 165);
+        color: $Verde-Dark;
         text-decoration: none;
         transition: 1s;
         &:hover {
-            border-bottom: 1px solid blueviolet;
+            border-bottom: 1px solid $Fuxia;
         }
     }
 }
