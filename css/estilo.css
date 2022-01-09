@@ -11,7 +11,7 @@
   font-size: 0.8rem;
   text-align: center;
   letter-spacing: .2rem;
-  border-bottom: solid 2px #1ee6cb;
+  border-bottom: solid 2px #18c9b1;
 }
 
 .contenedor-header .noti-header p {
@@ -19,8 +19,8 @@
 }
 
 .contenedor-header .bg-verde {
-  background-color: #1ee6cb;
-  color: #1ee6cb;
+  background-color: #18c9b1;
+  color: #18c9b1;
 }
 
 .contenedor-header ul li a {
@@ -120,7 +120,7 @@
 .negocios-listado .text-categorias span {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
-  color: #1ee6cb;
+  color: #18c9b1;
   text-shadow: 1px 1px 3px #132325;
   margin: 1rem;
   border-bottom: 1px solid #132325;
@@ -159,8 +159,8 @@
 }
 
 .negocios-destacados {
-  -webkit-box-shadow: 0px 0px 1px 1px #1ee6cb;
-          box-shadow: 0px 0px 1px 1px #1ee6cb;
+  -webkit-box-shadow: 0px 0px 1px 1px #18c9b1;
+          box-shadow: 0px 0px 1px 1px #18c9b1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -312,7 +312,7 @@ body {
   background-size: cover;
   color: #fff;
   min-width: 95%;
-  border-bottom: solid 2px #1ee6cb;
+  border-bottom: solid 2px #18c9b1;
 }
 
 .principal .texto {
@@ -359,7 +359,7 @@ body {
   background-size: cover;
   color: #fff;
   min-width: 95%;
-  border-bottom: solid 2px #1ee6cb;
+  border-bottom: solid 2px #18c9b1;
 }
 
 .noticias .texto {
@@ -404,7 +404,7 @@ body {
   background-size: cover;
   color: #fff;
   min-width: 95%;
-  border-bottom: solid 2px #1ee6cb;
+  border-bottom: solid 2px #18c9b1;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 250, 203, 0.3)), to(rgba(238, 12, 219, 0.3))), url("../img/blog.jpg");
   background-image: linear-gradient(rgba(30, 250, 203, 0.3), rgba(238, 12, 219, 0.3)), url("../img/blog.jpg");
 }
@@ -520,8 +520,8 @@ body {
 
 /* Card */
 .novedades {
-  -webkit-box-shadow: 0px 0px 1px 1px #1ee6cb;
-          box-shadow: 0px 0px 1px 1px #1ee6cb;
+  -webkit-box-shadow: 0px 0px 1px 1px #18c9b1;
+          box-shadow: 0px 0px 1px 1px #18c9b1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -535,14 +535,14 @@ body {
 }
 
 .novedades h2 {
-  color: #1ee6cb;
+  color: #18c9b1;
   text-align: center;
 }
 
 .novedades .card a, .novedades .negocios-destacados .img a, .negocios-destacados .novedades .img a {
-  color: #1ee6cb;
+  color: #18c9b1;
   float: right;
-  border: 2px solid #1ee6cb;
+  border: 2px solid #18c9b1;
   border-radius: 25px;
   text-transform: uppercase;
   padding: .5rem;

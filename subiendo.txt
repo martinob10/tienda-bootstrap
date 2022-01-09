@@ -1,4 +1,4 @@
-git init
+extegit init
 git ad
 git commit -m "first commit"
 git branch -M master
