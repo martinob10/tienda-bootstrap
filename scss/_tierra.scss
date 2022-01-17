@@ -1,5 +1,55 @@
-.categoria-negocio {
-    width: 18rem;
-    text-align: center;
+.categorias-negocios {
+    width: 22rem;
     align-items: center;
+    ul {
+        border-left: 1px solid $Fuxia;
+        li {
+            padding: 4px;
+        }
+    }
+}
+
+.menu-negocios {
+    text-align: left;
+    @media screen and (max-width: 1200px) {
+        width: 50%;
+        padding: 0 25%;
+    }
+    ul {
+        text-align: left;
+    }
+}
+
+.banner-tierra {
+    height: 23rem;
+    padding: 2%;
+    background-color: $Verde-Dark;
+    color: white;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+        height: 19rem;
+        padding-left: 20%;
+        background-image: linear-gradient( rgba(30, 250, 203, 0.5), rgba(238, 12, 219, 0.5)), url("../img/banner/hospital.png");
+    }
+    .banner-none {
+        position: center center;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.banner-tierra-medio {
+    padding: 2%;
+    background-color: $Verde-White;
+    @media screen and (max-width: 768px) {
+        height: 17rem;
+        padding-left: 20%;
+    }
+    .banner-none {
+        position: center center;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
 }

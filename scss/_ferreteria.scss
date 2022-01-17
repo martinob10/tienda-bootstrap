@@ -1,44 +1,80 @@
-//uso del MAPA y map-get
-$fuentes-sizes: ( size0: .7rem, size1: 1rem, size2: 1.1rem, size3: 1.3rem, size4: 1.4rem, size5:2.3rem);
-.texto-negocio {
-    font-size: map-get($fuentes-sizes, size1);
-    color: $Verde-Black;
-    .categoria-negocio {
-        font-size: map-get($fuentes-sizes, size2);
-        color: $Verde;
-    }
-    .nombre-negocio {
-        font-size: map-get($fuentes-sizes, size5);
-    }
-    .datos-pagos {
-        margin: map-get($fuentes-sizes, size0);
-        font-size: map-get($fuentes-sizes, size4);
-        color: $Verde-Dark;
-    }
-    .horario {
-        color: $Verde-Dark;
-        font-size: map-get($fuentes-sizes, size3);
-    }
-}
-
-.navegacion-negocios {
-    margin: 0;
-    ul {
-        display: flex;
-        li {
-            display: flex;
-            font-size: .8rem;
-            letter-spacing: .1rem;
-            margin: .1rem;
-            a {
-                color: $Verde-Black;
-                text-decoration: none;
-                transition: 1s;
-                &:hover {
-                    border-bottom: 1px solid $Verde-White;
-                    color: $Verde-Dark;
+    //uso del MAPA y map-get
+    $fuentes-sizes: ( size0: .7rem, size1: 1rem, size2: 1.1rem, size3: 1.3rem, size4: 1.4rem, size5:2rem);
+    .texto-negocio {
+        font-size: map-get($fuentes-sizes, size1);
+        color: $Verde-Black;
+        margin: 0 20%;
+        @media screen and (max-width: 900px) {
+            margin: 0;
+            padding: 0;
+        }
+        .categoria-negocio {
+            font-size: map-get($fuentes-sizes, size1);
+            color: $Verde;
+            text-align: left;
+            padding: 0;
+        }
+        .nombre-negocio {
+            font-size: map-get($fuentes-sizes, size5);
+        }
+        .datos-pagos {
+            margin: map-get($fuentes-sizes, size0);
+            font-size: map-get($fuentes-sizes, size3);
+            color: $Verde;
+            margin: 0;
+        }
+        .horario {
+            color: $Verde-Dark;
+            margin: 0;
+            font-size: map-get($fuentes-sizes, size3);
+        }
+        p {
+            margin: 0.2rem;
+            text-align: left;
+        }
+        .fuxia {
+            color: $Fuxia;
+            text-align: justify;
+        }
+        .card {
+            @media screen and (max-width: 600px) {
+                margin: 0;
+                padding: 0;
+            }
+            .card-body {
+                @media screen and (max-width: 375px) {
+                    margin: 0;
                 }
             }
         }
     }
-}
+    
+    .navegacion-negocios {
+        margin: 0;
+        ul {
+            display: flex;
+            li {
+                display: flex;
+                font-size: .8rem;
+                letter-spacing: .1rem;
+                margin: .1rem;
+                a {
+                    color: $Verde-Black;
+                    text-decoration: none;
+                    transition: 1s;
+                    &:hover {
+                        border-bottom: 1px solid $Verde-White;
+                        color: $Verde-Dark;
+                    }
+                }
+            }
+        }
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+    }
+    
+    .carousel-inner {
+        height: auto;
+    }

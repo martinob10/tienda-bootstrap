@@ -1,29 +1,71 @@
 .footer {
-    background-color: rgb(248, 244, 248);
+    background-color: $Verde-White;
 }
 
 .news {
-    background-color: #DFEEEA;
-    border-radius: 0.9rem;
-    border: solid 0.1rem;
-    box-shadow: 2px solid #132325;
+    box-shadow: 2px solid $Verde-Dark;
     align-self: center;
+    .titulo-news {
+        margin: .3rem;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    .form-news {
+        text-align: left;
+        .campo {
+            background-color: rgb(232, 243, 238);
+            box-sizing: border-box;
+            border-radius: 5px;
+            width: 80%;
+            padding: .3rem;
+            margin: .5rem;
+        }
+        .btn-outline-success {
+            padding: .3rem;
+            margin-left: .5rem;
+            width: 80%;
+        }
+    }
+    p {
+        text-align: left;
+    }
 }
 
 .categorias {
-    margin-top: 3rem;
-    ul li a {
-        color: $Verde-Dark;
-        text-decoration: none;
-        transition: 1s;
-        &:hover {
-            border-bottom: 1px solid $Fuxia;
+    margin-top: 2rem;
+    .titulo-news {
+        margin: .3rem;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    ul li {
+        text-align: left;
+        a {
+            font-size: .9rem;
+            opacity: .8;
+            color: $Verde-Dark;
+            text-decoration: none;
+            transition: 1s;
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
 
 .contacto {
+    margin-top: 2rem;
     flex-direction: column;
+    text-align: left;
+    font-size: .7rem;
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+        margin-top: 0;
+    }
+    .titulo-news {
+        margin: .3rem;
+        font-size: 1.2rem;
+    }
 }
 
 .btn-whatsapp {
@@ -47,7 +89,7 @@
     padding-top: 0.1rem;
     display: block;
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     h3 {
         font-size: 1rem;
     }

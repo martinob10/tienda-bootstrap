@@ -37,25 +37,64 @@
 }
 
 .footer {
-  background-color: #f8f4f8;
+  background-color: #d9f3ec;
 }
 
 .news {
-  background-color: #DFEEEA;
-  border-radius: 0.9rem;
-  border: solid 0.1rem;
-  -webkit-box-shadow: 2px solid #132325;
-          box-shadow: 2px solid #132325;
+  -webkit-box-shadow: 2px solid #145343;
+          box-shadow: 2px solid #145343;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
+.news .titulo-news {
+  margin: .3rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.news .form-news {
+  text-align: left;
+}
+
+.news .form-news .campo {
+  background-color: #e8f3ee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  width: 80%;
+  padding: .3rem;
+  margin: .5rem;
+}
+
+.news .form-news .btn-outline-success {
+  padding: .3rem;
+  margin-left: .5rem;
+  width: 80%;
+}
+
+.news p {
+  text-align: left;
+}
+
 .categorias {
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.categorias .titulo-news {
+  margin: .3rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.categorias ul li {
+  text-align: left;
 }
 
 .categorias ul li a {
+  font-size: .9rem;
+  opacity: .8;
   color: #145343;
   text-decoration: none;
   -webkit-transition: 1s;
@@ -63,14 +102,29 @@
 }
 
 .categorias ul li a:hover {
-  border-bottom: 1px solid #ec27b1;
+  opacity: 1;
 }
 
 .contacto {
+  margin-top: 2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
+  font-size: .7rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .contacto {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.contacto .titulo-news {
+  margin: .3rem;
+  font-size: 1.2rem;
 }
 
 .btn-whatsapp {
@@ -94,7 +148,7 @@
   padding-top: 0.1rem;
   display: block;
   width: 100%;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .derechos h3 {
@@ -143,7 +197,7 @@
 }
 
 .card, .negocios-destacados .img {
-  text-align: justify;
+  text-align: center;
   margin: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -156,6 +210,11 @@
 
 .card:hover, .negocios-destacados .img:hover {
   opacity: 100%;
+}
+
+.card .card-body, .negocios-destacados .img .card-body {
+  margin: 0;
+  padding: 0;
 }
 
 .negocios-destacados {
@@ -189,7 +248,7 @@
 
 .contenedor-noti {
   padding: 0.5rem;
-  border: 0.1rem solid #A7C4BC;
+  border: 0.1rem solid #d9f3ec;
   margin: 0.9rem;
   background-color: #fff;
 }
@@ -215,42 +274,148 @@
 }
 
 .contenedor-noti .fecha {
-  background-color: #A7C4BC;
+  background-color: #d9f3ec;
   font-size: 13px;
   letter-spacing: 3px;
 }
 
-.categoria-negocio {
-  width: 18rem;
-  text-align: center;
+.categorias-negocios {
+  width: 22rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.categorias-negocios ul {
+  border-left: 1px solid #ec27b1;
+}
+
+.categorias-negocios ul li {
+  padding: 4px;
+}
+
+.menu-negocios {
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-negocios {
+    width: 50%;
+    padding: 0 25%;
+  }
+}
+
+.menu-negocios ul {
+  text-align: left;
+}
+
+.banner-tierra {
+  height: 23rem;
+  padding: 2%;
+  background-color: #145343;
+  color: white;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-tierra {
+    height: 19rem;
+    padding-left: 20%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 250, 203, 0.5)), to(rgba(238, 12, 219, 0.5))), url("../img/banner/hospital.png");
+    background-image: linear-gradient(rgba(30, 250, 203, 0.5), rgba(238, 12, 219, 0.5)), url("../img/banner/hospital.png");
+  }
+}
+
+.banner-tierra .banner-none {
+  position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-tierra .banner-none {
+    display: none;
+  }
+}
+
+.banner-tierra-medio {
+  padding: 2%;
+  background-color: #d9f3ec;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-tierra-medio {
+    height: 17rem;
+    padding-left: 20%;
+  }
+}
+
+.banner-tierra-medio .banner-none {
+  position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-tierra-medio .banner-none {
+    display: none;
+  }
+}
+
 .texto-negocio {
   font-size: 1rem;
   color: #132325;
+  margin: 0 20%;
+}
+
+@media screen and (max-width: 900px) {
+  .texto-negocio {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .texto-negocio .categoria-negocio {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #02c479;
+  text-align: left;
+  padding: 0;
 }
 
 .texto-negocio .nombre-negocio {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .texto-negocio .datos-pagos {
   margin: 0.7rem;
-  font-size: 1.4rem;
-  color: #145343;
+  font-size: 1.3rem;
+  color: #02c479;
+  margin: 0;
 }
 
 .texto-negocio .horario {
   color: #145343;
+  margin: 0;
   font-size: 1.3rem;
+}
+
+.texto-negocio p {
+  margin: 0.2rem;
+  text-align: left;
+}
+
+.texto-negocio .fuxia {
+  color: #ec27b1;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .texto-negocio .card, .texto-negocio .negocios-destacados .img, .negocios-destacados .texto-negocio .img {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .texto-negocio .card .card-body, .texto-negocio .negocios-destacados .img .card-body, .negocios-destacados .texto-negocio .img .card-body {
+    margin: 0;
+  }
 }
 
 .navegacion-negocios {
@@ -280,8 +445,16 @@
 }
 
 .navegacion-negocios ul li a:hover {
-  border-bottom: 1px solid #A7C4BC;
+  border-bottom: 1px solid #d9f3ec;
   color: #145343;
+}
+
+.carousel-inner img {
+  width: 100%;
+}
+
+.carousel-inner {
+  height: auto;
 }
 
 /*Globales - Reseteo */

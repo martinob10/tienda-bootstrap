@@ -29,7 +29,7 @@
 
 //dentro del img se pone extend de .card
 .card {
-    text-align: justify;
+    text-align: center;
     margin: 1rem;
     align-items: center;
     opacity: 80%;
@@ -37,6 +37,10 @@
     border: none;
     &:hover {
         opacity: 100%;
+    }
+    .card-body {
+        margin: 0;
+        padding: 0;
     }
 }
 
