@@ -3,6 +3,7 @@
     align-items: center;
     ul {
         border-left: 1px solid $Fuxia;
+        padding-left: .4rem;
         li {
             padding: 4px;
         }
@@ -17,6 +18,17 @@
     }
     ul {
         text-align: left;
+    }
+}
+
+.mas-visitados {
+    @media screen and (max-width: 1200px) {
+        margin: 0 10%;
+    }
+    .visitados {
+        color: fuchsia;
+        font-family: 'Montserrat Alternates', sans-serif;
+        text-decoration: underline;
     }
 }
 

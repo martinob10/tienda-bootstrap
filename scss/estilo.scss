@@ -64,6 +64,12 @@
        @include img-principal;
    }
    
+   .negocios {
+       background-image: linear-gradient( rgba(30, 250, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/negocios/negocios2.jpg");
+       @include img-principal;
+       background-position: center center;
+   }
+   
    .img-blog {
        @include img-principal;
        background-image: linear-gradient( rgba(30, 250, 203, 0.3), rgba(238, 12, 219, 0.3)), url("../img/blog.jpg");

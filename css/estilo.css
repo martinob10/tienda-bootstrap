@@ -19,20 +19,21 @@
 }
 
 .contenedor-header .bg-verde {
-  background-color: #18c9b1;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#25aa87), color-stop(#25ba95), color-stop(#23caa2), color-stop(#20dbb1), to(#1becbf));
+  background-image: linear-gradient(to right top, #25aa87, #25ba95, #23caa2, #20dbb1, #1becbf);
   color: #18c9b1;
 }
 
 .contenedor-header ul li a {
   text-decoration: none;
-  color: #fff;
-  -webkit-transition: 2s;
-  transition: 2s;
+  color: #e4e3e3;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .contenedor-header ul li a:hover {
   text-decoration: none;
-  color: #ee92f1;
+  color: #f53ffc;
   border-bottom: 2px solid #fff;
 }
 
@@ -246,6 +247,12 @@
   text-align: justify;
 }
 
+.text-destacado {
+  color: fuchsia;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration: underline;
+}
+
 .contenedor-noti {
   padding: 0.5rem;
   border: 0.1rem solid #d9f3ec;
@@ -288,6 +295,7 @@
 
 .categorias-negocios ul {
   border-left: 1px solid #ec27b1;
+  padding-left: .4rem;
 }
 
 .categorias-negocios ul li {
@@ -307,6 +315,18 @@
 
 .menu-negocios ul {
   text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .mas-visitados {
+    margin: 0 10%;
+  }
+}
+
+.mas-visitados .visitados {
+  color: fuchsia;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration: underline;
 }
 
 .banner-tierra {
@@ -567,6 +587,54 @@ body {
 }
 
 .noticias .texto p {
+  margin: 1rem;
+}
+
+.negocios {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 250, 203, 0.3)), to(rgba(238, 12, 219, 0.2))), url("../img/negocios/negocios2.jpg");
+  background-image: linear-gradient(rgba(30, 250, 203, 0.3), rgba(238, 12, 219, 0.2)), url("../img/negocios/negocios2.jpg");
+  margin: 1rem .3rem;
+  background-position: bottom;
+  height: 28rem;
+  background-size: cover;
+  color: #fff;
+  min-width: 95%;
+  border-bottom: solid 2px #18c9b1;
+  background-position: center center;
+}
+
+.negocios .texto {
+  letter-spacing: .1rem;
+  text-shadow: 3px 3px 5px #132325;
+}
+
+.negocios .texto .titulo {
+  float: right;
+  margin: 2.5rem;
+  font-size: 3rem;
+  border-bottom: 3px solid #ec27b1;
+  letter-spacing: .3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .negocios .texto .titulo {
+    font-size: 2rem;
+  }
+}
+
+.negocios .texto h3 {
+  font-size: 2.7rem;
+  margin: 2rem;
+  letter-spacing: .2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .negocios .texto h3 {
+    font-size: 1.7rem;
+  }
+}
+
+.negocios .texto p {
   margin: 1rem;
 }
 

@@ -14,16 +14,16 @@
             }
         }
         .bg-verde {
-            background-color: $Verde-Logo;
+            background-image: linear-gradient(to right top, #25aa87, #25ba95, #23caa2, #20dbb1, #1becbf);
             color: $Verde-Logo;
         }
         ul li a {
             text-decoration: none;
-            color: #fff;
-            transition: 2s;
+            color: rgb(228, 227, 227);
+            transition: 1s;
             &:hover {
                 text-decoration: none;
-                color: rgb(238, 146, 241);
+                color: rgb(245, 63, 252);
                 border-bottom: 2px solid #fff;
             }
         }
