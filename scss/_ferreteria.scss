@@ -53,6 +53,10 @@
         margin: 0;
         ul {
             display: flex;
+            @media screen and (max-width: 768px) {
+                display: block;
+                text-align: left;
+            }
             li {
                 display: flex;
                 font-size: .8rem;

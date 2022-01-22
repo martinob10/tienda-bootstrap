@@ -16,14 +16,21 @@
         width: 50%;
         padding: 0 25%;
     }
+    @media screen and (max-width: 500px) {
+        padding: 1rem;
+        width: 100%;
+    }
     ul {
         text-align: left;
     }
 }
 
 .mas-visitados {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 768px) {
         margin: 0 10%;
+    }
+    @media screen and (max-width: 500px) {
+        margin: 0;
     }
     .visitados {
         color: fuchsia;

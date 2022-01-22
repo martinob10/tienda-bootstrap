@@ -46,6 +46,7 @@
                letter-spacing: .2rem;
                @media screen and (max-width: 900px) {
                    font-size: 1.7rem;
+                   margin: 2rem;
                }
            }
            p {
@@ -77,13 +78,13 @@
    
    .fondo-tarjetas {
        background-color: #fff;
-       padding: 1rem;
+       padding: .1rem;
        align-items: center;
-       border-radius: .5rem;
        .card-body {
            text-align: left;
            @media only screen and (max-width: 768px) {
-               text-align: center;
+               text-align: justify;
+               padding: 1rem;
            }
            &:hover .masinfo {
                opacity: 1;
@@ -99,7 +100,7 @@
            box-shadow: 0 0 0.2em rgba(0, 0, 0, .2);
            cursor: pointer;
            transition: .3s;
-           @media only screen and (max-width: 768px) {
+           @media only screen and (max-width: 760px) {
                width: 20rem;
            }
            @media screen and (max-width: 992px) {}
@@ -108,7 +109,7 @@
            }
            img {
                width: 16rem;
-               @media only screen and (max-width: 768px) {
+               @media only screen and (max-width: 760px) {
                    margin-left: 2rem;
                }
            }

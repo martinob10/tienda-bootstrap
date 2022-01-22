@@ -83,6 +83,15 @@
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 700px) {
+  .categorias {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
 .categorias .titulo-news {
   margin: .3rem;
   text-align: left;
@@ -91,6 +100,12 @@
 
 .categorias ul li {
   text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+  .categorias ul li {
+    text-align: center;
+  }
 }
 
 .categorias ul li a {
@@ -313,13 +328,26 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .menu-negocios {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
 .menu-negocios ul {
   text-align: left;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .mas-visitados {
     margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mas-visitados {
+    margin: 0;
   }
 }
 
@@ -448,6 +476,13 @@
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .navegacion-negocios ul {
+    display: block;
+    text-align: left;
+  }
+}
+
 .navegacion-negocios ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,6 +510,14 @@
 
 .carousel-inner {
   height: auto;
+}
+
+.formulario {
+  background-color: #f1f3f3;
+}
+
+.formulario .btn-success {
+  background-color: #18c9b1;
 }
 
 /*Globales - Reseteo */
@@ -536,6 +579,7 @@ body {
 @media screen and (max-width: 900px) {
   .principal .texto h3 {
     font-size: 1.7rem;
+    margin: 2rem;
   }
 }
 
@@ -583,6 +627,7 @@ body {
 @media screen and (max-width: 900px) {
   .noticias .texto h3 {
     font-size: 1.7rem;
+    margin: 2rem;
   }
 }
 
@@ -631,6 +676,7 @@ body {
 @media screen and (max-width: 900px) {
   .negocios .texto h3 {
     font-size: 1.7rem;
+    margin: 2rem;
   }
 }
 
@@ -678,6 +724,7 @@ body {
 @media screen and (max-width: 900px) {
   .img-blog .texto h3 {
     font-size: 1.7rem;
+    margin: 2rem;
   }
 }
 
@@ -687,11 +734,10 @@ body {
 
 .fondo-tarjetas {
   background-color: #fff;
-  padding: 1rem;
+  padding: .1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: .5rem;
 }
 
 .fondo-tarjetas .card-body {
@@ -700,7 +746,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   .fondo-tarjetas .card-body {
-    text-align: center;
+    text-align: justify;
+    padding: 1rem;
   }
 }
 
@@ -727,7 +774,7 @@ body {
   transition: .3s;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .fondo-tarjetas .tarjeta-negocio {
     width: 20rem;
   }
@@ -742,7 +789,7 @@ body {
   width: 16rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .fondo-tarjetas .tarjeta-negocio img {
     margin-left: 2rem;
   }
